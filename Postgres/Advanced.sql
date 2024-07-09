@@ -1,0 +1,1 @@
+select * from users U join orders O on U.id = O.user_id

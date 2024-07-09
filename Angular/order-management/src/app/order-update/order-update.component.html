@@ -1,0 +1,13 @@
+<form [formGroup]="updateForm" (submit)="submitUpdate()">
+    <label for="name">Name</label>
+    <input id="name" type="text" formControlName="name">
+    @if(name?.touched && name?.invalid) {
+    <div class="error">Your name is invalid!</div>
+    }
+    <label for="price">Price</label>
+    <input id="price" type="number" formControlName="price">
+    @if(price?.touched && price?.invalid) {
+    <div class="error">Your price is invalid!</div>
+    }
+    <button type="submit" [disabled]="updateForm.invalid">Update</button>
+</form>

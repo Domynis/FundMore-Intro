@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (order of orderList; track order.id) {
+        <tr>
+            <td>{{ order.id }}</td>
+            <td>{{ order.name }}</td>
+            <td>{{ order.price }}</td>
+            <td>
+                <a [routerLink]="['/orders/update', order.id]">Update</a>
+                <a [routerLink]="['/orders/delete', order.id]">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

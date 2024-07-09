@@ -1,0 +1,8 @@
+<div class="main">
+    <h3> Confirm delete </h3>
+    <p>Are you sure you want to delete the order for {{ order?.name }}?</p>
+    <div class="actions">
+        <button (click)="confirmDelete()" class="delete-btn">Delete</button>
+        <button (click)="closeDeleteComp()" class="cancel-btn">Cancel</button>
+    </div>
+</div>

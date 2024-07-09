@@ -1,0 +1,10 @@
+<nav>
+    <ul>
+        <li><a routerLink="/orders" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Order List</a>
+        </li>
+        <li><a routerLink="/orders/add" routerLinkActive="active">Add Order</a></li>
+        <li><a class="generic-anchor" routerLink="/orders/update" [routerLinkActiveOptions]="{ exact: false }"  routerLinkActive="active">Update Order</a></li>
+        <li><a class="generic-anchor" routerLink="/orders/delete" [routerLinkActiveOptions]="{ exact: false }"  routerLinkActive="active">Delete Order</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>

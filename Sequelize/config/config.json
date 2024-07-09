@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "Lv359Ymu!",
+    "database": "eshop",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "Lv359Ymu!",
+    "database": "eshop",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "Lv359Ymu!",
+    "database": "eshop",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
